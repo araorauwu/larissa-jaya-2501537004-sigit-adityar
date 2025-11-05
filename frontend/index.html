@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Larissa Jaya - 2501537004 Sigit Adityar</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #ffffff);
+      padding: 40px;
+      margin: 0;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      color: #0d47a1;
+      font-size: 2.2em;
+      margin-bottom: 5px;
+    }
+
+    p.subtitle {
+      color: #555;
+      font-size: 1em;
+      margin: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: all 0.25s ease-in-out;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 5px;
+      background: #2196f3;
+      transition: height 0.3s ease;
+    }
+
+    .card:hover::before {
+      height: 100%;
+      background: rgba(33,150,243,0.15);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #0d47a1;
+      font-weight: bold;
+      font-size: 1.1em;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Dashboard Larissa Jaya</h1>
+    <p class="subtitle">Sistem Manajemen Toko - 2501537004 Sigit Adityar</p>
+  </header>
+
+  <div class="grid">
+    <div class="card"><a href="suppliers.html">📦 Suppliers</a></div>
+    <div class="card"><a href="purchases.html">🧾 Purchases</a></div>
+    <div class="card"><a href="purchase_details.html">📋 Purchase Details</a></div>
+    <div class="card"><a href="categories.html">🏷️ Categories</a></div>
+    <div class="card"><a href="products.html">🛍️ Products</a></div>
+    <div class="card"><a href="inventory.html">📊 Inventory</a></div>
+    <div class="card"><a href="customers.html">👥 Customers</a></div>
+    <div class="card"><a href="orders.html">🧺 Orders</a></div>
+    <div class="card"><a href="order_details.html">📦 Order Details</a></div>
+    <div class="card"><a href="employees.html">👨‍💼 Employees</a></div>
+  </div>
+
+  <footer>
+    © 2025 Larissa Jaya — Dibuat oleh Sigit Adityar (2501537004)
+  </footer>
+</body>
+</html>

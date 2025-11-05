@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><title>Categories</title><link rel="stylesheet" href="assets/style.css"></head>
+<body>
+<h1>🏷️ Data Categories</h1><a href="index.html">⬅️ Kembali</a>
+<table border="1" cellpadding="8"><thead><tr><th>ID</th><th>Nama Kategori</th><th>Deskripsi</th></tr></thead><tbody></tbody></table>
+<script>
+const url="http://localhost/larissa-jaya-2501537004-sigit-adityar/backend/api.php/records/categories";
+fetch(url).then(r=>r.json()).then(d=>{
+  d.records.forEach(x=>{
+    document.querySelector("tbody").innerHTML+=`
+    <tr><td>${x.id}</td><td>${x.nama_kategori}</td><td>${x.deskripsi}</td></tr>`;
+  });
+});
+</script>
+</body></html>

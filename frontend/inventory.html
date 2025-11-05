@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="UTF-8"><title>Inventory</title><link rel="stylesheet" href="assets/style.css"></head>
+<body>
+<h1>🏬 Data Inventory</h1><a href="index.html">⬅️ Kembali</a>
+<table border="1" cellpadding="8"><thead><tr><th>ID</th><th>Product ID</th><th>Lokasi Gudang</th><th>Stok</th></tr></thead><tbody></tbody></table>
+<script>
+const url="http://localhost/larissa-jaya-2501537004-sigit-adityar/backend/api.php/records/inventory";
+fetch(url).then(r=>r.json()).then(d=>{
+  d.records.forEach(x=>{
+    document.querySelector("tbody").innerHTML+=`
+    <tr><td>${x.id}</td><td>${x.product_id}</td><td>${x.lokasi_gudang}</td><td>${x.stok}</td></tr>`;
+  });
+});
+</script>
+</body></html>
